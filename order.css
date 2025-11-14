@@ -1,0 +1,108 @@
+/* ===== Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #f3e5ab, #f0b849);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* ===== Card ===== */
+.order-container {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.order-container h1 {
+    margin-bottom: 15px;
+    color: #2c2c2c;
+}
+
+.order-container p {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* ===== Form Styles ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: 500;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: 1px solid #f0b849;
+}
+
+textarea {
+    resize: none;
+}
+
+/* ===== Button ===== */
+.btn {
+    background: #f0b849;
+    color: #000;
+    border: none;
+    padding: 12px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #d49e33;
+}
+
+/* ===== Back Link ===== */
+.back {
+    display: inline-block;
+    margin-top: 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.back:hover {
+    text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 500px) {
+    .order-container {
+        padding: 20px;
+    }
+}
